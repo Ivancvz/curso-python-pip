@@ -13,7 +13,7 @@ def normalize(s):
         s = s.replace(a, b).replace(a.upper(), b.upper())
     return s
 
-pob = pd.read_csv('https://raw.githubusercontent.com/Ivancvz/platzi_courses/main/data.csv')
+pob = pd.read_csv('data.csv')
 country = input('Ingresa el país: ').capitalize()
 countries = list(pob['Country'])
 a = countries.index(normalize(country))
